@@ -22,7 +22,7 @@ http://jsh.zirak.me . It could take a bit to load.
 
 ## What is this?
 As the introduction above says, this is Chrome's dev tools javascript console in
-a regular web page. To see how it was done, see the [How stuff works](#How stuff works)
+a regular web page. To see how it was done, see the [How stuff works](#how-stuff-works)
 section below.
 
 Write some javascript, invite your friends, write some javascript on your
@@ -53,6 +53,20 @@ What you'd expect of Chrome dev tools' excellent console:
 * [ ] Themes (?)
 * [ ] Settings (?)
 * [ ] Better editing (tab button support)
+
+## Running
+A bit unfortunately, this is meant to run on Google App Engine, so to run you'll
+need to [download the SDK for Python](https://cloud.google.com/appengine/downloads).
+
+Unzip/install/whatever, and run:
+
+```sh
+$ python2.7 path/to/google_appengine/dev_appserver.py path/to/jsh
+```
+
+(if 2.7 is already your Python version you can omit that first part.)
+
+Pay a visit to localhost:8080 and have fun.
 
 ## How stuff works
 The best way to learn how the dev tools works is by looking at the source and
